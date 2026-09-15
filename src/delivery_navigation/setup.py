@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'nav_publisher = delivery_navigation.nodes.nav_publisher:main',
         ],
     },
 )
