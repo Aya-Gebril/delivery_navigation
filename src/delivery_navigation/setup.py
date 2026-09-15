@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'nav_publisher = delivery_navigation.nodes.nav_publisher:main',
             'nav_subscriber = delivery_navigation.nodes.nav_subscriber:main',
+            'nav_service_server = delivery_navigation.nodes.nav_service_server:main',
         ],
     },
 )
