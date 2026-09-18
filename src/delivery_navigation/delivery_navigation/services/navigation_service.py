@@ -4,7 +4,7 @@ from delivery_navigation.interfaces.navigation_interface import (NavigationInter
 
 class NavigationService(NavigationInterface):
     def __init__(self):
-        self.distance = 20.0
+        self.distance = 200.0
         self.speed = 2.0
 
     def get_next_status(self):

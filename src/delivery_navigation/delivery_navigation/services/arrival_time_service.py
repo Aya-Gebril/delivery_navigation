@@ -5,4 +5,4 @@ class ArrivalTimeService(ArrivalEstimator):
         if speed <= 0:
             return 0.0
 
-        return (distance / speed) / 60.0
+        return (distance / speed)
