@@ -10,7 +10,7 @@ class NavServiceServer(Node):
         self.server = self.create_service(EstimateArrivalTime, 'estimate_arrival_time', self.calculate_eta)
 
     def calculate_eta(self, request, response):
-        response.minutes_remaining = self.service.estimate(request.distance_remaining, request.speed)
+        response.seconds_remaining = self.service.estimate(request.distance_remaining, request.speed)
         return response
 
 def main():
