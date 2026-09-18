@@ -28,7 +28,7 @@ class NavSubscriber(Node):
     def arrival_response_callback(self, future):
         try:
             response = future.result()
-            self.get_logger().info(f'Estimated arrival time: {response.seconds_remaining:.2f} seconds')
+            self.get_logger().info(f'Estimated arrival time: {response.minutes_remaining:.2f} minutes')
         except Exception as e:
             self.get_logger().error(f'Service call failed: {e}')
 
